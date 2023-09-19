@@ -4,9 +4,19 @@
     margin: 0;
 }
 body{
-    background-color: #d9dcd6;
+    background-color: #a7edff;
 }
 
+
+/* Handles Nav + homerow text */
+.nav-bar{
+    background-color: #2a607c;
+    width: 100%;
+}
+
+.text-right{
+    text-align: right;
+}
 
 h1 {
     display: inline-block;
@@ -15,6 +25,12 @@ h1 {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #ffffff;
+}
+
+h2{
+    color: rgb(206, 171, 252);
+    display: inline-block;
+    padding: 10px;
 }
 
 li {
@@ -27,35 +43,49 @@ li {
 a{
     color: white;
 }
-.image1{
-    width: 100px;
-    height: 100px;
+
+/* Handles The toprow images */
+#row{
+    display: inline-block;
+    margin: 0px;
+    flex-wrap: nowrap;
 }
-.image2 {
+.pfp{
+    width: 200px;
+    height: 200px;
+}
+.filler {
+    /* Make position absolute and works on any size */
+    position: absolute;
     width: 100%;
-    height: 300px;
-    object-fit: cover;
+    height: 200px;
     align-items: right;
   }
 
-.aboutSect{
+/* Control Left side section */
+.leftSect{
+    font-size: 40px;
     height: 200px;
-    width: 30%;
-    padding: 20px;
-}
-.nav-bar{
-    background-color: #2a607c
-}
-
-.text-center{
+    width: 20%;
+    padding: 30px;
+    background-color: rgb(243, 220, 190);
     text-align: center;
+    border-style: solid;
+    border-color: black;
 }
-.text-right{
-    text-align: right;
+.leftSect h3{
+    position: relative;
+    top: 25%;
+    border-style: solid;
+    border-color: black;
 }
-
-.row::after{
-    content: "";
-    clear: both;
-    display:table;
+.leftSect p{
+    /* set position of about me text */
+    position: relative;
+    width: 800px;
+    left: 500px;
+    top:-35px;   
+    display: table;
+    font-size: 20px;
+    background-color: bisque;
 }
