@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #d9dcd6;
+}
+
+
+h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 48px;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+}
+
+li {
+    display: inline;
+    font-size: 25px;
+    padding: 0px 20px;
+    text-decoration: none;
+}
+
+a{
+    color: white;
+}
+.image1{
+    width: 100px;
+    height: 100px;
+}
+.image2 {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    align-items: right;
+  }
+
+.aboutSect{
+    height: 200px;
+    width: 30%;
+    padding: 20px;
+}
+.nav-bar{
+    background-color: #2a607c
+}
+
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display:table;
+}
