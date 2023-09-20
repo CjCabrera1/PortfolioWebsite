@@ -22,13 +22,23 @@
         </ul>
     </section>
 
+    <section id="imgContainer">
+        <!-- left image -->
+        <section id="imgLContainer">
+            <img src="./Assets/images/profilepic.png" alt="">
+        </section>
+        <!-- right image -->
+        <section id="imgRContainer">
+            <img src="./Assets/images/background1.jpg" alt="">
+        </section>
+    </section>
+
 
     <!-- Parent Section -->
     <section id="container">
         <!-- Left Side Child -->
         <section id="leftContainer">
-            <img src="./Assets/images/profilepic.png" alt="">
-            <div class ="abtMe" id="about-scroll">About Me</div>
+            <div class ="leftTags" id="about-scroll">About Me</div>
             <div class="leftTags" id="projects-scroll">Projects</div>
             <div class="leftTags" id="resume-scroll">Resume</div>
             <div class="leftTags" id="contact-scroll">Contact Me</div>
@@ -36,21 +46,33 @@
 
         <!-- Right Side Child -->
         <section id="rightContainer">
-            <img src="./Assets/images/background1.jpg" alt="">
             <div id="abtMeR">My name is Carl Justin Cabrera, I go by CJ and I'm 23 years old. I started learning about computer science in 2015 all the way until 2020. I have made projects in Python, Java, JavaScript, and HTML. In my free time I like to go bowling and play video games.</div>
 
             <!-- Main photo body -->
             <section id="mainPhoto">
-                <a href="https://github.com/CjCabrera1/finalproject" target="_blank"><img src="./Assets/images/asteroidsExample.png" alt="asteroidsExample"></a>
-                <a href="https://cjcabrera1.github.io/prework0-study-guide/" target="_blank"><img src="./Assets/images/preworkStudyguide.png" alt="preworkStudyguide"></a>
-                <a href="https://cjcabrera1.github.io/refactorMarketing/" target="_blank"><img src="./Assets/images/refactorWebsite.png" alt="refactorWebsite"></a>
+                <div class="image-item">
+                    <a href="https://github.com/CjCabrera1/finalproject" target="_blank">
+                        <img src="./Assets/images/asteroidsExample.png" alt="asteroidsExample">
+                    </a>
+                     <figcaption>Objected Oriented Program - Asteroids</figcaption>
+                </div>
+
+                <div class="image-item">               
+                    <a href="https://cjcabrera1.github.io/prework0-study-guide/" target="_blank">       
+                        <img src="./Assets/images/preworkStudyguide.png" alt="preworkStudyguide">
+                    </a>
+                    <figcaption>Coding bootcamp prework study guide</figcaption>               
+                </div>
+
+                <div class="image-item">  
+                    <a href="https://cjcabrera1.github.io/refactorMarketing/" target="_blank">
+                       <img src="./Assets/images/refactorWebsite.png" alt="refactorWebsite">
+                    </a>
+                    <figcaption>Refactored website project</figcaption>
+                </div>
+
             </section>
 
-            <section id="captionR">
-                <figcaption>Objected Oriented Program - Asteroids</figcaption>
-                <figcaption>Coding bootcamp prework study guide</figcaption>
-                <figcaption>Refactored website project</figcaption>
-            </section>
 
             <!-- Resume -->
             <h3>Work Experience</h3>
@@ -77,7 +99,7 @@
 
             <section id="contact">
                 <a href="https://www.linkedin.com/in/carl-justin-cabrera/">LinkedIn</a>
-                <li id="leftTags">Email: CJCabrera0125@gmail.com</li>
+                <li class="leftTags">Email: CJCabrera0125@gmail.com</li>
                 <a href="https://github.com/CjCabrera1">Github</a>
             </section>
         </section>
