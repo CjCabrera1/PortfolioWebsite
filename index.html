@@ -11,53 +11,68 @@
     <!--4 clickable tabs that will direct me to their location -->
     <section class="nav-bar">
         <h1>CJ Cabrera</h1>
-        <h2>Full-Stack Developer</h2>
-        <nav class = "text-right">
-            <ul>
-                <li>
-                    <a href="">About Me</a>
-                </li>
-
-                <li>
-                    <a href="">Github</a>
-                </li>
-
-                <li>
-                    <a href="">Resume</a>
-                </li>
-
-                <li>
-                    <a href="">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
+        <h2>Full-Stack Developer</h2>  
+        
+        
+        <ul class="menu">
+            <li>About Me</li>
+            <li>Projects</li>
+            <li>Resume</li>
+            <li>Contact Me</li>
+        </ul>
     </section>
-    
-    <!-- set images  -->
-    <section id="row">
-        <img src=".\Assets\images\profilepic.png" alt="photo of me" class = "pfp">
-        <img src=".\Assets\images\background1.jpg" alt="background1" class="filler">
-    </section>
-
-    <main>
-        <section class="leftSect">
-            <h3>About Me</h3>
-            <p>My name is Carl Justin Cabrera, I go by CJ and I'm 23 years old. I started learning about computer science in 2015 all the way until 2020. I have made projects in Python, Java, JavaScript, HTML, and Processing. In my free time I like to go bowling, watch movies/tv shows and play video games.</p>
+    <!-- Parent Section -->
+    <section id="container">
+        <!-- Left Side Child -->
+        <section id="leftContainer">
+            <img src="./Assets/images/profilepic.png" alt="">
+            <div id = "abtMe">About Me</div>
+            <div>Projects</div>
+            <div id="resumeSectL">Resume</div>
+            <div>Contact Me</div>
         </section>
 
-        <section class="leftSect">
-            <h3>Github</h3>
-        </section>
+        <!-- Right Side Child -->
+        <section id="rightContainer">
+            <img src="./Assets/images/background1.jpg" alt="">
+            <div id="abtMeR">My name is Carl Justin Cabrera, I go by CJ and I'm 23 years old. I started learning about computer science in 2015 all the way until 2020. I have made projects in Python, Java, JavaScript, and HTML. In my free time I like to go bowling and play video games.</div>
 
-        <section class="leftSect">
-            <h3>Resume</h3>
-        </section>
+            <!-- Main photo body -->
+            <section id="mainPhoto">
+                <img src="./Assets/images/asteroidsExample.png" alt="">
+                <img src="./Assets/images/preworkStudyguide.png" alt="">
+                <img src="./Assets/images/refactorWebsite.png" alt="">
+            </section>
 
-        <section class="leftSect">
-            <h3>Contact Me</h3>
-        </section>
-    </main>
+            <!-- Resume -->
+            <h3>Work Experience</h3>
+            <section id="resumeSectR">
 
+                <div>Complimentary Cafe
+                    <li>Created quality drinks following instructions</li>
+                    <li>Handled inventory on a daily basis</li>
+                    <li>Adhered to all sanitation and health guidelines</li>                    
+                </div>
+
+                <div>IKEA
+                <li>Communicating with other Co-Workers to optimize customer satisfaction</li>
+                <li>Handled large transactions and setup delivery dates </li>
+                <li>Actively sold products and provided the customers with the best and easiest experience at IKEA</li>
+                </div>
+
+                <div>AMC Theaters
+                    <li>Learned how to multitask in a fast paced environment. </li>
+                    <li>Provided quick and efficient customer service without lowering quality. </li>
+                    <li>Provided an active leadership role</li>
+                </div>
+            </section>
+
+            <section id="contact">
+                <a href="">LinkedIn</a>
+                <li>Email: CJCabrera0125@gmail.com</li>
+                <a href="">Github</a>
+            </section>
+        </section>
 
   </body>
 </html>

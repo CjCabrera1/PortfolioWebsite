@@ -1,91 +1,121 @@
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
 }
 body{
-    background-color: #a7edff;
+    background-color: rgb(209, 247, 247);
 }
 
 
 /* Handles Nav + homerow text */
 .nav-bar{
     background-color: #2a607c;
+    
+}
+
+/* .nav-bar .menu-items{
+    display: flex;
+} */
+
+/* hamburger menu code */
+.menu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li{
+    margin: 0 1rem;
+    overflow: hidden; 
+}
+
+/* Main */
+#container{
+    display: flex;
+}
+/* Left container */
+#leftContainer{
+    width: 25%;
+    display:flex;
+    gap:17em;
+    flex-direction: column;
+    align-items: center;
+    border-color:black ;
+    border-style:solid;
+}
+
+#leftContainer img{
+    display:flex;
+    height: 20em;
     width: 100%;
 }
+#leftContainer div{
 
-.text-right{
-    text-align: right;
+    font-size: 2em;
 }
-
-h1 {
-    display: inline-block;
+/* about me positioning controls */
+#abtMe{
     position: relative;
-    font-size: 48px;
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #ffffff;
+    top: -4em;
+    
 }
 
-h2{
-    color: rgb(206, 171, 252);
-    display: inline-block;
-    padding: 10px;
+#abtMeR{
+    position: relative;
+    top:-.5em;
 }
+/* Right container controls */
+#rightContainer{
+    width: 75%;
+    display:flex;
+    gap:9em;
 
-li {
-    display: inline;
-    font-size: 25px;
-    padding: 0px 20px;
-    text-decoration: none;
+    flex-direction: column;
 }
-
-a{
-    color: white;
-}
-
-/* Handles The toprow images */
-#row{
-    display: inline-block;
-    margin: 0px;
-    flex-wrap: nowrap;
-}
-.pfp{
-    width: 200px;
-    height: 200px;
-}
-.filler {
-    /* Make position absolute and works on any size */
-    position: absolute;
+#rightContainer img{
+    height: 20em;
     width: 100%;
-    height: 200px;
-    align-items: right;
-  }
+}
+#rightContainer div{
 
-/* Control Left side section */
-.leftSect{
-    font-size: 40px;
-    height: 200px;
-    width: 20%;
-    padding: 30px;
-    background-color: rgb(243, 220, 190);
+    font-size: 1.5em;
+    /* text within divs */
+}
+/* Project Photo Controls */
+#mainPhoto{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    top: 5em;
+}
+
+#mainPhoto img{
+    width: 25%;
+}
+
+/* resume section */
+h3{
     text-align: center;
-    border-style: solid;
-    border-color: black;
 }
-.leftSect h3{
+#resumeSectL{
     position: relative;
-    top: 25%;
-    border-style: solid;
-    border-color: black;
+    top: 3em;
 }
-.leftSect p{
-    /* set position of about me text */
+#resumeSectR{
+    display: flex;
     position: relative;
-    width: 800px;
-    left: 500px;
-    top:-35px;   
-    display: table;
-    font-size: 20px;
-    background-color: bisque;
+    top: -7em;
+    justify-content: space-evenly;
+}
+#resumeSectR div li{
+font-size: 16px;
+}
+
+/* Contact Me */
+#contact{
+list-style-type: none;
+position: relative;
+display: flex;
+justify-content: space-evenly;
+font-size: 30px;
+top:-2em;
 }
