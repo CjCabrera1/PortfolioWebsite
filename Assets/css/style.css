@@ -9,6 +9,8 @@ body{
 /* Handles Nav + homerow text */
 .nav-bar{
     background-color: #2a607c;
+    border-style: solid;
+    border-color: bisque;
 }
 h1{
     padding: 5px;
@@ -20,15 +22,14 @@ h2{
 .menu{
     display:flex;
     list-style-type: none;
-    justify-content: flex-end;
+    justify-content:space-around;
     font-size: 23px;
-
-}
-.menu li{
-   
 }
 
-.menu li:hover{
+.menu li a{
+    color: black;
+}
+.menu li a:hover{
     color: white;
 }
 /* Main */
@@ -37,12 +38,13 @@ h2{
 }
 /* Left container */
 #leftContainer{
-    width: 25%;
+    width: 15%;
     display:flex;
     gap:17em;
     flex-direction: column;
     align-items: center;
-    border-style: dashed;
+    border-color: bisque;
+    border-style: solid;
 }
 
 #leftContainer img{
@@ -55,9 +57,15 @@ h2{
     font-size: 2em;
 }
 /* about me positioning controls */
-#abtMe{
+.abtMe{
     position: relative;
     top: -4em;
+    border-bottom: solid;
+    
+}
+
+.leftTags{
+    border-bottom: solid; 
 }
 
 #abtMeR{
@@ -89,7 +97,7 @@ h2{
     top: 5em;
 }
 
-#mainPhoto img{
+#mainPhoto a{
     width: 25%;
 }
 
@@ -110,10 +118,7 @@ h2{
 h3{
     text-align: center;
 }
-#reAlign{
-    position: relative;
-    /* top: 15em;  */
-}
+
 #resumeSectR{
     display: flex;
     position: relative;
